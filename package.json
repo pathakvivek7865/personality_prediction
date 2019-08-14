@@ -1,0 +1,47 @@
+{
+  "name": "personality_prediction",
+  "version": "1.0.0",
+  "description": "Personality Prediction",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p --progress --display-error-details --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "dev": "webpack-dev-server --progress -d --config webpack.config.js --inline --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcl132/personality-prediction-from-text.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcl132/personality-prediction-from-text/issues"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "homepage": "https://github.com/jcl132/personality-prediction-from-text#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.36",
+    "@babel/core": "^7.0.0-beta.36",
+    "@babel/preset-env": "^7.0.0-beta.36",
+    "@babel/preset-react": "^7.0.0-beta.36",
+    "babel-loader": "^8.0.0-beta.0",
+    "lodash": "^4.17.4",
+    "react-hot-loader": "next",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.0.0",
+    "material-ui": "^0.20.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "whatwg-fetch": "^2.0.4"
+  }
+}
